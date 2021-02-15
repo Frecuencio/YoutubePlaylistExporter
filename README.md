@@ -8,7 +8,7 @@ python -m pip install pytube
 
 ## Usage
 
-Only -pl argument is required, containging the YouTube plalyist id (String after https://www.youtube.com/playlist?list= ).
+Only -pl argument is required, beign the YouTube playlist ID (String after https://www.youtube.com/playlist?list= ).
 Note that HTML file is not a real backup or dump, use with urlfile or csv if you want a real backup.
 
 ```
