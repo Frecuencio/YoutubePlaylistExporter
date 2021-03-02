@@ -78,6 +78,9 @@ class PlaylistSaver(object):
 					except VideoUnavailable:
 						print("Skipped: Video Unavailable")
 						continue
+					except:
+						print("Skipped: Other exception")
+						continue
 		print("--Saved %s.csv--" % self.fname)
 
 	def downloadVideos(self):
@@ -92,6 +95,9 @@ class PlaylistSaver(object):
 				continue
 			except VideoUnavailable:
 				print("Skipped: Video Unavailable")
+				continue
+			except:
+				print("Skipped: Other exception")
 				continue
 
 	def saveUrlTxt(self):
