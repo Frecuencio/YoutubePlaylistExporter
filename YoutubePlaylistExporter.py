@@ -9,6 +9,7 @@ from datetime import date
 import time
 import csv
 import argparse
+from sys import exit
 
 
 class PlaylistSaver(object):
@@ -78,6 +79,8 @@ class PlaylistSaver(object):
 					except VideoUnavailable:
 						print("Skipped: Video Unavailable")
 						continue
+					except KeyboardInterrupt:
+						exit()
 					except:
 						print("Skipped: Other exception")
 						continue
