@@ -99,6 +99,8 @@ class PlaylistSaver(object):
 			except VideoUnavailable:
 				print("Skipped: Video Unavailable")
 				continue
+			except KeyboardInterrupt:
+				exit()
 			except:
 				print("Skipped: Other exception")
 				continue
