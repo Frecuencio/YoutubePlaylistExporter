@@ -1,7 +1,7 @@
 # YoutubePlaylistExporter
 Youtube playlist exporter (HTML, CSV and TXT) written in python3.
 
-Script requires pytube too work, you can install it via python pip:
+Script requires pytube to work, you can install it via python pip:
 ```bash
 python -m pip install pytube
 ```
